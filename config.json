@@ -19,7 +19,7 @@
   "randomClientid": false,
   "refresh": 0,
   "xTvgUrl": false,
-  "ondemand": false,
+  "ondemand": true,
   "vlcopts": false,
   "pipeopts": false
 }
