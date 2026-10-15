@@ -34,12 +34,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Skip on-demand in CI
-        # config.json keeps ondemand:true for local use, and lib/config.js cannot
-        # turn an option off via CLI (options are merged with ||). Patch the runner
-        # copy only: the on-demand playlist is ~33 MiB of VOD churn that must not
-        # enter git history, and building it costs thousands of extra API calls.
-        run: node -e "const f='./config.json',c=JSON.parse(require('fs').readFileSync(f));c.ondemand=false;require('fs').writeFileSync(f,JSON.stringify(c,null,2))"
+      - name: Prepare CI config
+        # config.json keeps ondemand:true for local use, and lib/config.js merges
+        # options with ||, so a CLI flag cannot turn an option off. Write a CI-only
+        # config OUTSIDE the repo: patching config.json in place left a tracked file
+        # modified, and git refuses to rebase with unstaged changes.
+        run: |
+          node -e "const fs=require('fs');const c=JSON.parse(fs.readFileSync('config.json','utf8'));c.ondemand=false;fs.writeFileSync((process.env.RUNNER_TEMP||'.')+'/ci-config.json',JSON.stringify(c,null,2));console.log('ci-config ondemand='+c.ondemand)"
 
       - name: Run scraper
         run: |
@@ -50,7 +51,7 @@ jobs:
           # publish stale playlists and show a green run.
           marker="$TMP/scraper-start"
           : > "$marker"
-          node index.js 2>&1 | tee "$TMP/scraper.log"
+          node index.js --config "$TMP/ci-config.json" 2>&1 | tee "$TMP/scraper.log"
           if grep -q "ERROR: got exception" "$TMP/scraper.log"; then
             echo "::error::scraper reported an exception; refusing to publish stale data"
             exit 1
@@ -68,6 +69,7 @@ jobs:
           set -eu
           shopt -s nullglob
           BR="${GITHUB_REF_NAME}"
+          RR="refs/remotes/origin/${BR}"
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           # Publish live-TV playlists only. On-demand playlists and the .cache blob
@@ -85,12 +87,19 @@ jobs:
             exit 0
           fi
           git commit -m "Auto update playlist"
-          # Rebase onto the live branch first so a concurrent push cannot turn
-          # this into a lost-commit clobber, then retry transient failures.
+          # Discard any incidental edit to a tracked file (lockfile churn, etc.).
+          # The playlists are committed, so this cannot lose work, and it guarantees
+          # the rebase below is not wedged by unstaged changes.
+          git checkout -- .
+          # Rebase onto the live branch so a concurrent push cannot turn this into a
+          # lost-commit clobber, then push under an explicitly valued lease and retry
+          # transient failures.
           published=0
           for attempt in 1 2 3; do
-            if git pull --rebase origin "$BR" \
-              && git push --force-with-lease origin "HEAD:$BR"; then
+            if git fetch -q --no-tags origin "+refs/heads/${BR}:${RR}" \
+              && git rebase "$RR" \
+              && git push --force-with-lease="refs/heads/${BR}:$(git rev-parse "$RR")" \
+                   origin "HEAD:refs/heads/${BR}"; then
               published=1
               break
             fi
@@ -98,4 +107,4 @@ jobs:
             echo "Push attempt ${attempt} failed; retrying in $((attempt * 30))s"
             sleep $((attempt * 30))
           done
-          [ "$published" = "1" ] || { echo "Failed to publish playlist after 3 attempts"; exit 1; }
+          [ "$published" = "1" ] || { echo "::error::Failed to publish playlist after 3 attempts"; exit 1; }
