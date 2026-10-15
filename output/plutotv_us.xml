@@ -2421,6 +2421,11 @@
         <desc>Superstar Clint Eastwood and director Don Siegel re-team for their fifth film in this fascinating account of the only three men ever to escape from the infamous maximum security prison at Alcatraz.</desc>
         <icon src="https://images.pluto.tv/series/590bfa6b114615beb3525149/tile_1776112921326.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="5f4d878d3d19b30007d2e782" start="20261015220000 +0000" stop="20261016000000 +0000">
+        <title>White Lightning</title>
+        <desc>In one of his most memorable roles, Burt Reynolds portrays a moonshine whiskey runner who turns state's witness to avenge the murder of a boy no one understood.</desc>
+        <icon src="https://images.pluto.tv/series/5b3aec75bbacc7ee58f53150/tile_1771603921219.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="617b37b361e0fd0008cfd8c5" start="20261015153000 +0000" stop="20261015173000 +0000">
         <title>Double Team</title>
         <desc>Action superstar Jean-Claude Van Damme joins forces with NBA and media sensation Dennis Rodman in this action-packed thriller. Top counter-terrorist Jack Quinn is ready to get out of the spy game until the evil Stavros kidnaps his wife and unborn son.</desc>
@@ -2571,6 +2576,11 @@
         <desc>Einar Gilkyson (Robert Redford) lives on a Wyoming ranch with his only friend, Mitch (Morgan Freeman). Then, suddenly, the woman he blames for his son's death arrives at his door broke, desperate, and with a granddaughter he's never known.</desc>
         <icon src="https://images.pluto.tv/series/613fccbd766f2a00142e6981/tile_1779141961184.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="6a7cc5a857bd65df5dadba5f" start="20261015213000 +0000" stop="20261015233000 +0000">
+        <title>Nacho Libre</title>
+        <desc>Jack Black is more hilarious than ever as Ignacio, a monastery cook who feeds orphan children by day and by night transforms himself into Nacho Libre, a notorious Luchador in stretchy pants.</desc>
+        <icon src="https://images.pluto.tv/series/5a9ef3002a32513a0be76270/tile_1785759121089.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="6aa043fe0c9f5239c2c508c2" start="20261015154500 +0000" stop="20261015181500 +0000">
         <title>The Last Victim</title>
         <desc>A Neo-Western thriller set in the American Southwest, following Sheriff Hickey as he tries to solve the worst case he has seen in his small town, likely committed by a violent local gang led by a fearsome criminal.</desc>
@@ -2700,6 +2710,11 @@
         <title>RiffTrax: The Sorcerers Apprentice</title>
         <desc>No, it's not the terrible Sorcerer's Apprentice movie with Nicolas Cage, come on, we wouldn't do that to you.</desc>
         <icon src="https://images.pluto.tv/series/64efc2ecc564500013171282/tile_1765864443245.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="58d947b9e420d8656ee101ab" start="20261015210036 +0000" stop="20261015211536 +0000">
+        <title>RiffTrax Short: Act Your Age</title>
+        <desc>Young Jim is caught in a shocking act of pencil-based vandalism, leading him to look deeply into the core of his soul and come to the inexorable conclusion that he is kind of a weenie.</desc>
+        <icon src="https://images.pluto.tv/series/6037d0e6558c290014f9878f/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5c2d64ffbdf11b71587184b8" start="20261015170000 +0000" stop="20261015173000 +0000">
         <title>The Exes</title>
@@ -8912,15 +8927,15 @@ chases a girl across the yard.</desc>
         <desc>Contemporary fashion designed especially for QVC.</desc>
         <icon src="https://images.pluto.tv/series/646ad3b7188649001a4155ae/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
-    <programme channel="67817323dd7846fe546940dd" start="20261015190000 +0000" stop="20261016000000 +0000">
+    <programme channel="67817323dd7846fe546940dd" start="20261015190000 +0000" stop="20261015210000 +0000">
         <title>QVC2</title>
-        <desc>no info available</desc>
-        <icon src="https://images.pluto.tv/channels/67817323dd7846fe546940dd/featuredImage.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=900&amp;q=75&amp;w=1600"/>
+        <desc>QVC2 is your 24/7 shopping destination, with a fun-filled mix of brand-new live shows and encore presentations of those you may have missed on QVC.</desc>
+        <icon src="https://images.pluto.tv/series/678a6c1bad92850013a0c37a/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
-    <programme channel="67817323dd7846fe546940dd" start="20261016000000 +0000" stop="20261016010000 +0000">
-        <title>Breezies Intimates Collection</title>
-        <desc>Comfortable undergarments.</desc>
-        <icon src="https://images.pluto.tv/series/63b28101501aab0013b6bfdf/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    <programme channel="67817323dd7846fe546940dd" start="20261015210000 +0000" stop="20261015230000 +0000">
+        <title>QVC2</title>
+        <desc>QVC2 is your 24/7 shopping destination, with a fun-filled mix of brand-new live shows and encore presentations of those you may have missed on QVC.</desc>
+        <icon src="https://images.pluto.tv/series/678a6c1bad92850013a0c37a/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="68757effdf333e336be1e49f" start="20261015165052 +0000" stop="20261015171500 +0000">
         <title>Breaking Through</title>
@@ -9167,10 +9182,10 @@ chases a girl across the yard.</desc>
         <desc>Delivering everything fans need before kickoff with expert analysis, key storylines, matchup breakdowns and the updates from around the league.</desc>
         <icon src="https://images.pluto.tv/series/6542a7af3e6938001a9b937e/tile_1787857477928.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
-    <programme channel="5ced7d5df64be98e07ed47b6" start="20261015205900 +0000" stop="20261015210000 +0000">
+    <programme channel="5ced7d5df64be98e07ed47b6" start="20261015205900 +0000" stop="20261015215900 +0000">
         <title>NFL Channel</title>
-        <desc>no info available</desc>
-        <icon src="https://images.pluto.tv/channels/5ced7d5df64be98e07ed47b6/featuredImage_1785344058498.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=900&amp;q=75&amp;w=1600"/>
+        <desc>Get 24/7, unlimited access to NFL content on NFL Channel for FREE. The NFL Channel features Live Game Day Coverage, NFL Game Replays, Original Shows, Emmy-Award winning series and more!</desc>
+        <icon src="https://images.pluto.tv/series/6542b640619680001a719ccb/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5d486acc34ceb37d3c458a64" start="20261015170000 +0000" stop="20261015180000 +0000">
         <title>The Dana Show</title>
@@ -14727,6 +14742,11 @@ chases a girl across the yard.</desc>
         <desc>In a tale of love lost and found again, two ordinary people are rendered extraordinary by the strength, power, and beauty of true love.</desc>
         <icon src="https://images.pluto.tv/series/6a91e75820b6387cd0886016/tile_1788562807005.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="5a66795ef91fef2c7031c599" start="20261016024500 +0000" stop="20261016051500 +0000">
+        <title>Kate &amp; Leopold</title>
+        <desc>When a rip in time brings together a charming 19th-century bachelor and a thoroughly 21st-century woman, the potential for an old-fashioned modern romance ignites!</desc>
+        <icon src="https://images.pluto.tv/series/5fb571bf9a01a3001b731e22/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="5b4e69e08291147bd04a9fd7" start="20261015190006 +0000" stop="20261015213006 +0000">
         <title>Fatal Attraction</title>
         <desc>Michael Douglas plays Dan, a New York attorney who has a tryst with seductive Alex Forrest while his wife is away. Dan later shrugs off the affair as a mistake and considers it over. But Alex won't be ignored. Not now, not tomorrow, not ever.</desc>
@@ -14936,6 +14956,11 @@ chases a girl across the yard.</desc>
         <title>The Ring Two</title>
         <desc>When evidence at a local crime scene reveals a mysterious unmarked videotape, Rachel realizes that Samara is back and more determined than ever to continue her relentless cycle of terror.</desc>
         <icon src="https://mam-assets.clusters.pluto.tv/assets/dd0e0614-46d2-4c81-9fff-dbc7772bad65.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="62ba60f059624e000781c436" start="20261016021500 +0000" stop="20261016041500 +0000">
+        <title>The Ruins</title>
+        <desc>"The Ruins" follows a group of friends who become entangled in a struggle for survival after visiting a remote archaeological dig in the Mexican jungle, where they discover something deadly living among the ruins.</desc>
+        <icon src="https://images.pluto.tv/series/5c9c08aec8ccd6797db67d09/tile_1791479882399.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="645e7828e1979c00087b75b4" start="20261015204100 +0000" stop="20261015222100 +0000">
         <title>The Minute You Wake Up Dead</title>
@@ -15266,6 +15291,11 @@ chases a girl across the yard.</desc>
         <title>Terrifier</title>
         <desc>Art The Clown sets his sights on three young women, along with anyone else that gets in his way.</desc>
         <icon src="https://images.pluto.tv/series/6675c5406ae03e0013661769/tile_1789595283071.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="5c665db3e6c01b72c4977bc2" start="20261016014501 +0000" stop="20261016044501 +0000">
+        <title>Terrifier 2</title>
+        <desc>After being resurrected by a sinister entity, Art the Clown returns to Miles County where he begins to target a teenage girl and her younger brother on Halloween.</desc>
+        <icon src="https://images.pluto.tv/series/643ef3f020cb77001a12ad4c/tile_1766316559221.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5ca671f215a62078d2ec0abf" start="20261015210000 +0000" stop="20261015213000 +0000">
         <title>Detroiters</title>
@@ -21332,10 +21362,15 @@ bad breath.</desc>
         <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
         <icon src="https://images.pluto.tv/series/65243fac3e6938001a9d85a8/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
-    <programme channel="67817323dd7846fe546940dd" start="20261015210000 +0000" stop="20261016000000 +0000">
+    <programme channel="67817323dd7846fe546940dd" start="20261015210000 +0000" stop="20261015230000 +0000">
         <title>QVC2</title>
-        <desc>no info available</desc>
-        <icon src="https://images.pluto.tv/channels/67817323dd7846fe546940dd/featuredImage.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=900&amp;q=75&amp;w=1600"/>
+        <desc>QVC2 is your 24/7 shopping destination, with a fun-filled mix of brand-new live shows and encore presentations of those you may have missed on QVC.</desc>
+        <icon src="https://images.pluto.tv/series/678a6c1bad92850013a0c37a/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="67817323dd7846fe546940dd" start="20261015230000 +0000" stop="20261016000000 +0000">
+        <title>QVC2</title>
+        <desc>QVC2 is your 24/7 shopping destination, with a fun-filled mix of brand-new live shows and encore presentations of those you may have missed on QVC.</desc>
+        <icon src="https://images.pluto.tv/series/678a6c1bad92850013a0c37a/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="67817323dd7846fe546940dd" start="20261016000000 +0000" stop="20261016010000 +0000">
         <title>Breezies Intimates Collection</title>
@@ -21346,11 +21381,6 @@ bad breath.</desc>
         <title>Fashion Clearance by Stacy London</title>
         <desc>QVC2 is your 24/7 shopping destination, with a fun-filled mix of brand-new live shows and encore presentations of those you may have missed on QVC.</desc>
         <icon src="https://images.pluto.tv/series/6747eadfe07f28001381079a/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
-    </programme>
-    <programme channel="67817323dd7846fe546940dd" start="20261016020000 +0000" stop="20261016030000 +0000">
-        <title>MUK LUKS - Wear Your Way of Life</title>
-        <desc>Stylish &amp; Casual Cold Weather Footwear, Sleepwear &amp; Accessories.</desc>
-        <icon src="https://images.pluto.tv/series/63bc4f2ed5762100130371d3/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="68757effdf333e336be1e49f" start="20261015202905 +0000" stop="20261015230931 +0000">
         <title>Your Extraordinary Life Playbook</title>
@@ -21567,10 +21597,10 @@ bad breath.</desc>
         <desc>Outspoken and unfiltered takes on some of the biggest stories in sports, featuring Dave Portnoy and the Barstool crew.</desc>
         <icon src="https://images.pluto.tv/series/68d1ea93d279ff48059a5c7c/tile_1761698316038.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
-    <programme channel="5ced7d5df64be98e07ed47b6" start="20261015210000 +0000" stop="20261015215900 +0000">
+    <programme channel="5ced7d5df64be98e07ed47b6" start="20261015205900 +0000" stop="20261015215900 +0000">
         <title>NFL Channel</title>
-        <desc>no info available</desc>
-        <icon src="https://images.pluto.tv/channels/5ced7d5df64be98e07ed47b6/featuredImage_1785344058498.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=900&amp;q=75&amp;w=1600"/>
+        <desc>Get 24/7, unlimited access to NFL content on NFL Channel for FREE. The NFL Channel features Live Game Day Coverage, NFL Game Replays, Original Shows, Emmy-Award winning series and more!</desc>
+        <icon src="https://images.pluto.tv/series/6542b640619680001a719ccb/tile.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5ced7d5df64be98e07ed47b6" start="20261015215900 +0000" stop="20261015230000 +0000">
         <title>NFL Daily</title>
@@ -26602,6 +26632,11 @@ bad breath.</desc>
         <desc>The symphony's immense emotional scope, features innovative use of large-scale forces for breathtaking sound, and an ambitious philosophical journey that connects listeners to the grandeur of the natural world.</desc>
         <icon src="https://images.pluto.tv/series/6969bf17e943377c69788774/tile_1785438160001.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="5f779951372da90007fd45e8" start="20261016010700 +0000" stop="20261016020700 +0000">
+        <title>Rachmaninov &amp; Gershwin: Rhapsodies</title>
+        <desc>The National Philharmonic Orchestra of Russia and acclaimed Russian pianist Boris Berezovsky are conducted by Konstantin Khvatynets in an interpretation of works by Rachmaninov and George Gershwin from Moscow's Tchaikovsky Concert Hall.</desc>
+        <icon src="https://images.pluto.tv/series/6aa49d2e4996e40ab2b7208b/tile_1789173039386.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="5fd7bca3e0a4ee0007a38e8c" start="20261015210000 +0000" stop="20261015220000 +0000">
         <title>Women of the 2000s</title>
         <desc>Jams and ballads from the ladies who defined the decade.</desc>
@@ -27200,7 +27235,7 @@ bad breath.</desc>
     <programme channel="569546031a619b8f07ce6e25" start="20261016043000 +0000" stop="20261016063000 +0000">
         <title>Evil Dead (2013)</title>
         <desc>Five friends have found the mysterious and fiercely powerful Book of the Dead, which releases a violent demon on a bloodthirsty quest to possess them all.</desc>
-        <icon src="https://images.pluto.tv/series/6254832078f6d300136e1749/tile_1791326188832.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+        <icon src="https://mam-assets.clusters.pluto.tv/assets/e9257bd8-706f-4210-9045-368d99dfca41.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="58af4c093a41ca9d4ecabe96" start="20261015234500 +0000" stop="20261016021500 +0000">
         <title>Coming to America</title>
@@ -27546,6 +27581,11 @@ bad breath.</desc>
         <title>Creed II</title>
         <desc>The next chapter in the Creed story follows Adonis Creed's life inside and outside the ring as he deals with newfound fame, family issues, and his ongoing quest to become a champion, with Michael B. Jordan and Sylvester Stallone starring.</desc>
         <icon src="https://images.pluto.tv/series/6a9068dfb60195e27e062362/tile_1788197762012.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="6785b98d688edb0008cb99be" start="20261016070000 +0000" stop="20261016093000 +0000">
+        <title>Creed III</title>
+        <desc>After dominating the boxing world, Adonis Creed has been thriving in his career and family life.  But now he puts his future on the line to battle a fighter -- and former friend -- who has absolutely nothing to lose…and everything to gain.</desc>
+        <icon src="https://images.pluto.tv/series/6a906a4528c873c7c46963aa/tile_1787849286109.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="68c32d88f56983aba40052bd" start="20261016004500 +0000" stop="20261016024500 +0000">
         <title>The Golden Child</title>
@@ -39750,6 +39790,11 @@ girl who can't somersault.</desc>
         <desc>A man in London tries to help a counter-espionage Agent. But when the Agent is killed, and the man stands accused, he must go on the run to save himself and stop a spy ring which is trying to steal top secret information.</desc>
         <icon src="https://images.pluto.tv/series/665e49881e15340013ab4925/tile_1784233081868.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="561c5b0dada51f8004c4d855" start="20261016101500 +0000" stop="20261016123000 +0000">
+        <title>Fitzwilly</title>
+        <desc>It’s handmaiden-to-footservant combat when secretary Barbara Feldon attempts to scuttle butler Dick Van Dyke right out of the heist business in this spirited comedy that also stars John McGiver, Norman Fell, Sam Waterston and Edith Evans.</desc>
+        <icon src="https://images.pluto.tv/series/64b9a5f0ba8eeb00133802cb/tile_1784090881842.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="561d7d484dc7c8770484914a" start="20261016030000 +0000" stop="20261016054500 +0000">
         <title>The Equalizer 2</title>
         <desc>Denzel Washington returns to one of his signature roles in the first sequel of his career. Robert McCall serves an unflinching justice for the exploited and oppressed – but how far will he go when it is someone he loves?</desc>
@@ -39839,6 +39884,11 @@ girl who can't somersault.</desc>
         <title>Serving Sara</title>
         <desc>Joe Tyler is a process server who will do anything to deliver legal documents to victims. But nothing in Joe's bag of tricks prepares him for Sara, the stunning, soon-to-be ex-wife of a playboy cattle baron named Gordon Moore.</desc>
         <icon src="https://images.pluto.tv/series/5fc6b8724926fb00133b8df6/tile_1773670321217.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="5a66795ef91fef2c7031c599" start="20261016101500 +0000" stop="20261016121500 +0000">
+        <title>I Don't Know How She Does It</title>
+        <desc>Kate Reddy (Sarah Jessica Parker) manages the ultimate balancing act between work and her adoring family in this comedy based on the bestseller by Allison Pearson.</desc>
+        <icon src="https://images.pluto.tv/series/632cfca5db4067001363ab0c/tile_1777856761404.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5b4e69e08291147bd04a9fd7" start="20261016030006 +0000" stop="20261016053006 +0000">
         <title>Fatal Attraction</title>
@@ -40020,6 +40070,11 @@ girl who can't somersault.</desc>
         <desc>Grease is the one that you want! Go back to high school with Pink Lady Sandy (Olivia Newton-John), leader of the bad-boy T-Birds, Danny (John Travolta), and a rockin' and rollin' all-star cast.</desc>
         <icon src="https://images.pluto.tv/series/66a808798dfe2a00138c41e1/tile_1785796201623.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="5f4d878d3d19b30007d2e782" start="20261016101500 +0000" stop="20261016124500 +0000">
+        <title>Saturday Night Fever</title>
+        <desc>John Travolta performs as the troubled Tony Manero - Brooklyn paint store clerk by day and undisputed king of the dance floor by night. A powerful and provocative urban tragedy that carries as much significance today as it did in 1977.</desc>
+        <icon src="https://images.pluto.tv/series/5bd34440603aedec59ff5603/tile_1778870522291.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="617b37b361e0fd0008cfd8c5" start="20261016041500 +0000" stop="20261016064500 +0000">
         <title>World War Z</title>
         <desc>World War Z is the fast-paced, pulse-pounding epic of the potential last days of the human race. Former United Nations employee Gerry Lane (Brad Pitt) is called in to help stop the pandemic from spreading worldwide.</desc>
@@ -40139,6 +40194,11 @@ girl who can't somersault.</desc>
         <title>The Golden Child</title>
         <desc>As ‘The Chosen One’, Murphy’s on a madcap mission to save The Golden Child, a youth with mystical powers who’s been abducted by an evil cult.</desc>
         <icon src="https://images.pluto.tv/series/5c64787d91482f7c81e5f45a/tile_1777574882522.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="68c32d88f56983aba40052bd" start="20261016091500 +0000" stop="20261016114500 +0000">
+        <title>Harlem Nights</title>
+        <desc>In the waning days of Prohibition, Sugar Ray and his adopted son, Quick, run a speakeasy called Club Sugar Ray. Gangster Bugsy Calhoune pays corrupt cop Phil Cantone to close Club Sugar Ray down.</desc>
+        <icon src="https://images.pluto.tv/series/5f2099057d5a3f001a490127/tile_1791329764131.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="68fbf8101d26140175db8b58" start="20261016034500 +0000" stop="20261016054500 +0000">
         <title>Friday the 13th - Part III</title>
@@ -52858,6 +52918,11 @@ chosen as seven finalists compete for the big money.</desc>
         <desc>The record-setting #1 concert film of all time, is Eddie Murphy doing what he does best: making people laugh.</desc>
         <icon src="https://images.pluto.tv/series/60903cd54dec400013c9cb75/tile_1783705323881.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="68c32d88f56983aba40052bd" start="20261016134500 +0000" stop="20261016154500 +0000">
+        <title>The Golden Child</title>
+        <desc>As ‘The Chosen One’, Murphy’s on a madcap mission to save The Golden Child, a youth with mystical powers who’s been abducted by an evil cult.</desc>
+        <icon src="https://images.pluto.tv/series/5c64787d91482f7c81e5f45a/tile_1777574882522.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="68fbf8101d26140175db8b58" start="20261016074500 +0000" stop="20261016094500 +0000">
         <title>Friday the 13th</title>
         <desc>Camp Crystal Lake has been shuttered for over 20 years due to several vicious and unsolved murders. The camp's new owner and seven young counselors are preparing the property for reopening despite warnings from residents about a "death curse."</desc>
@@ -58332,6 +58397,11 @@ bad breath.</desc>
         <title>Django Unchained</title>
         <desc>With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a plantation owner.</desc>
         <icon src="https://images.pluto.tv/series/6ab9a1c1bd5183017727acfe/tile_1790550466193.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="68487fb3f212bedacf5a53e3" start="20261016152045 +0000" stop="20261016183537 +0000">
+        <title>The Hateful Eight</title>
+        <desc>In wintry Wyoming, eight strangers find themselves battling the elements and each other.</desc>
+        <icon src="https://images.pluto.tv/series/68f7dde05c1ebc63c0ee97c1/tile_1761074660638.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="68757c45759366af05b3b199" start="20261016083000 +0000" stop="20261016093000 +0000">
         <title>America's Next Top Model</title>
@@ -65103,6 +65173,11 @@ bad breath.</desc>
         <desc>This sexy sequel to EL MARIACHI follows a mysterious guitar player (Antonio Banderas) as he seeks vengeance against the men who murdered his girlfriend.</desc>
         <icon src="https://images.pluto.tv/series/5fad8998584f69001a6669f2/tile_1791325564601.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
+    <programme channel="561d7d484dc7c8770484914a" start="20261016173000 +0000" stop="20261016210000 +0000">
+        <title>Gladiator</title>
+        <desc>A man robbed of his name and his dignity strives to win them back and gain the freedom of his people in this epic historical drama from director Ridley Scott.</desc>
+        <icon src="https://images.pluto.tv/series/61e9e0500a7fe8001a13a7eb/tile_1791406442851.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
     <programme channel="569546031a619b8f07ce6e25" start="20261016130000 +0000" stop="20261016150000 +0000">
         <title>A Quiet Place Part II</title>
         <desc>Following the deadly events at home, the Abbott family (Emily Blunt, Millicent Simmonds, Noah Jupe) continues their fight for survival in silence, now facing the terrors of the outside world in this suspenseful thriller directed by John Krasinski.</desc>
@@ -65727,6 +65802,11 @@ bad breath.</desc>
         <title>Hell Fest</title>
         <desc>A serial killer in costume at a Halloween theme park kills off visitors, unbeknownst to bystanders who think it's part of the fun.</desc>
         <icon src="https://images.pluto.tv/series/6581e129b4896d001383865d/tile_1759494248168.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
+    </programme>
+    <programme channel="5c665db3e6c01b72c4977bc2" start="20261016173001 +0000" stop="20261016194501 +0000">
+        <title>How to Talk to Girls At Parties</title>
+        <desc>Worlds collide when Enn, a shy teenager in 70s London, meets the beautiful and rebellious Zan (Elle Fanning) at a party. They set in motion the ultimate showdown between their rivaling worlds and test the limits of how far they will go for true love.</desc>
+        <icon src="https://images.pluto.tv/series/62a225a84a9f0a001393e464/tile_1779995882134.jpg?fill=blur&amp;fit=fill&amp;fm=jpg&amp;h=660&amp;q=75&amp;w=660"/>
     </programme>
     <programme channel="5ca671f215a62078d2ec0abf" start="20261016130000 +0000" stop="20261016133000 +0000">
         <title>Workaholics</title>
