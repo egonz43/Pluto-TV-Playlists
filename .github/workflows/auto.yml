@@ -2,8 +2,20 @@ name: Auto Pluto Update
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    # Twice daily at 04:17 and 16:17 UTC (12:17 and 00:17 GMT+8), 12h apart.
+    # Two triggers give redundancy: GitHub can delay a scheduled run by many
+    # hours and never backfills skipped intervals, so a single daily trigger
+    # would occasionally miss a whole day. The off-:00 minute avoids the
+    # crowded top-of-hour window where scheduled runs queue up.
+    - cron: '17 4,16 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-pluto-update
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -17,17 +29,73 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: npm
 
       - name: Install dependencies
         run: npm install
 
+      - name: Skip on-demand in CI
+        # config.json keeps ondemand:true for local use, and lib/config.js cannot
+        # turn an option off via CLI (options are merged with ||). Patch the runner
+        # copy only: the on-demand playlist is ~33 MiB of VOD churn that must not
+        # enter git history, and building it costs thousands of extra API calls.
+        run: node -e "const f='./config.json',c=JSON.parse(require('fs').readFileSync(f));c.ondemand=false;require('fs').writeFileSync(f,JSON.stringify(c,null,2))"
+
       - name: Run scraper
-        run: node index.js
+        run: |
+          set -euo pipefail
+          TMP="${RUNNER_TEMP:-.}"
+          # lib/plutotv/index.js catches every per-region exception and only logs it,
+          # then still exits 0. Without this guard a broken scrape would silently
+          # publish stale playlists and show a green run.
+          marker="$TMP/scraper-start"
+          : > "$marker"
+          node index.js 2>&1 | tee "$TMP/scraper.log"
+          if grep -q "ERROR: got exception" "$TMP/scraper.log"; then
+            echo "::error::scraper reported an exception; refusing to publish stale data"
+            exit 1
+          fi
+          for f in output/plutotv_us.m3u8 output/plutotv_us.xml; do
+            if [ ! -s "$f" ] || [ "$f" -ot "$marker" ]; then
+              echo "::error::$f was not regenerated (missing, empty, or older than this run)"
+              exit 1
+            fi
+          done
+          echo "Scraper output verified fresh."
 
       - name: Commit files
         run: |
+          set -eu
+          shopt -s nullglob
+          BR="${GITHUB_REF_NAME}"
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add -f output/
-          git commit -m "Auto update playlist" || echo "No changes"
-          git push --force
+          # Publish live-TV playlists only. On-demand playlists and the .cache blob
+          # are regenerable churn, and git stores every distinct version forever.
+          git ls-files -z -- 'output/*_ondemand_*' 'output/*.cache' \
+            | xargs -0 -r git rm --cached -q --
+          for f in output/*.m3u8 output/*.xml; do
+            case "$(basename "$f")" in
+              *_ondemand_*) echo "Not publishing $f"; continue ;;
+            esac
+            git add -f "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "No playlist changes to publish."
+            exit 0
+          fi
+          git commit -m "Auto update playlist"
+          # Rebase onto the live branch first so a concurrent push cannot turn
+          # this into a lost-commit clobber, then retry transient failures.
+          published=0
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$BR" \
+              && git push --force-with-lease origin "HEAD:$BR"; then
+              published=1
+              break
+            fi
+            git rebase --abort || true
+            echo "Push attempt ${attempt} failed; retrying in $((attempt * 30))s"
+            sleep $((attempt * 30))
+          done
+          [ "$published" = "1" ] || { echo "Failed to publish playlist after 3 attempts"; exit 1; }
