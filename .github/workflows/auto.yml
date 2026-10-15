@@ -34,13 +34,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Prepare CI config
-        # config.json keeps ondemand:true for local use, and lib/config.js merges
-        # options with ||, so a CLI flag cannot turn an option off. Write a CI-only
-        # config OUTSIDE the repo: patching config.json in place left a tracked file
-        # modified, and git refuses to rebase with unstaged changes.
-        run: |
-          node -e "const fs=require('fs');const c=JSON.parse(fs.readFileSync('config.json','utf8'));c.ondemand=false;fs.writeFileSync((process.env.RUNNER_TEMP||'.')+'/ci-config.json',JSON.stringify(c,null,2));console.log('ci-config ondemand='+c.ondemand)"
+      - name: Restore VOD metadata cache
+        # Keeps CI warm. The scraper reads this file to avoid re-fetching every VOD
+        # item, but it is an intermediate, not a published playlist, so it lives in
+        # Actions cache rather than in git history (~44 MiB per regenerated blob).
+        uses: actions/cache@v4
+        with:
+          path: output/plutotv_ondemand_us.cache
+          key: vod-cache-${{ github.run_number }}
+          restore-keys: vod-cache-
 
       - name: Run scraper
         run: |
@@ -51,7 +53,7 @@ jobs:
           # publish stale playlists and show a green run.
           marker="$TMP/scraper-start"
           : > "$marker"
-          node index.js --config "$TMP/ci-config.json" 2>&1 | tee "$TMP/scraper.log"
+          node index.js 2>&1 | tee "$TMP/scraper.log"
           if grep -q "ERROR: got exception" "$TMP/scraper.log"; then
             echo "::error::scraper reported an exception; refusing to publish stale data"
             exit 1
@@ -72,14 +74,11 @@ jobs:
           RR="refs/remotes/origin/${BR}"
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          # Publish live-TV playlists only. On-demand playlists and the .cache blob
-          # are regenerable churn, and git stores every distinct version forever.
-          git ls-files -z -- 'output/*_ondemand_*' 'output/*.cache' \
-            | xargs -0 -r git rm --cached -q --
+          # Publish every playlist and EPG file, live TV and on-demand alike. Only the
+          # .cache blob stays out of git; it is an intermediate, kept warm by the
+          # Actions cache step above.
+          git ls-files -z -- 'output/*.cache' | xargs -0 -r git rm --cached -q --
           for f in output/*.m3u8 output/*.xml; do
-            case "$(basename "$f")" in
-              *_ondemand_*) echo "Not publishing $f"; continue ;;
-            esac
             git add -f "$f"
           done
           if git diff --cached --quiet; then
